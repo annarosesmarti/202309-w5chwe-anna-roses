@@ -8,4 +8,3 @@ const board = new World(cell);
 board.initBoard(3, false);
 
 console.log(board);
-console.log(cell);
