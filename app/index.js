@@ -1,10 +1,13 @@
 import World from "./World/World.js";
-import Cell from "./Cell/Cell.js";
 
-const cell = new Cell(true);
-
-const board = new World(cell);
+const board = new World();
 
 board.initBoard(3, false);
 
-console.log(board);
+board.cell[1][1].live();
+board.cell[2][0].live();
+board.cell[2][1].live();
+
+board.countNeighbours(0, 2);
+
+console.log(board.cell[0][2].neighbours);
